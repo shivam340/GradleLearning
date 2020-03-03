@@ -19,3 +19,11 @@ if(greetMessage != null) {
 }else{
     println("$TAG  user defined property greetMessage is not available.")
 }
+
+// Access System properties using System.getProperty()
+val javaVersion = System.getProperty("java_version")
+if(javaVersion != null) {
+    println("$TAG  value of system property java_version is available $javaVersion")
+}else{
+    println("$TAG  value of system property java_version is not available")
+}
